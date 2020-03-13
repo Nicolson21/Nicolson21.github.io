@@ -1,2 +1,2 @@
 # My personal website
-My own personal website writed by hand from zero inspired in Alex Flipnote's website :heart:
+My own personal website from scratch inspired in Alex Flipnote's website :heart:
