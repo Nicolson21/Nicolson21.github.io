@@ -1,148 +1,204 @@
 body {
-  margin: 8px;
-  font-size: 1.5em;
-  line-height: 1.6;
-  font-weight: 400;
-  font-family: "Roboto";
-  color: #222;
-  background: #191919;
-  height: 100%;
+    margin: 8px;
+    font-size: 1.5em;
+    line-height: 1.6;
+    font-weight: 400;
+    font-family: "Roboto";
+    color: #222;
+    background: #191919;
+    height: 100%;
 }
 
 html {
-  font-size: 62.5%;
+    font-size: 60%;
 }
 
 a, html, body, h1, h2, h4, p {
-  color: #fff;
-  font-weight: normal;
-  margin: 0;
+    color: #fff;
+    font-weight: normal;
+    margin: 0;
 }
 
 h1 {
-  font-size: 4rem;
-  line-height: 1.2;
-  letter-spacing: -0.1rem;
+    font-size: 4rem;
+    line-height: 1.2;
+    letter-spacing: -0.1rem;
 }
 
 .box h3 {
-  font-size: 3.3rem;
-  letter-spacing: -0.1rem;
-  line-height: 1.3;
-  font-weight: bold;
+    font-size: 3.3rem;
+    letter-spacing: -0.1rem;
+    line-height: 1.3;
+    font-weight: bold;
 }
 
 a {
-  text-decoration: none;
-}
-
-.center-object {
-  left: 50%;
-  position: absolute;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-}
-
-.center-object .me {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  height: auto;
-  justify-content: center;
-  padding: 1rem 0;
-  width: 100%;
-  z-index: 10;
-}
-
-.center-object .me .image-title {
-  border-radius: 100%;
-  width: 9em;
-}
-
-.center-object .me .title {
-  filter: drop-shadow(6px 6px 0 rgba(0, 0, 0, 0.4));
-  font-size: 5rem;
-  letter-spacing: 1px;
-  margin: 0.25em;
-}
-
-.buttons {
-  align-items: center;
-  display: flex;
-  height: auto;
-  justify-content: center;
-  padding: 1rem 0;
-  width: 100%;
-  z-index: 10;
-}
-
-.buttons a {
-  border: 0;
-  border-radius: 6px;
-  color: #fff;
-  display: inline-block;
-  font-size: 1.1em;
-  height: 36px;
-  line-height: 36px;
-  margin: 0.25em;
-  padding: 0 2rem;
-  vertical-align: middle;
-}
-
-.fullscreen {
-  background: transparent;
-  display: block;
-  height: 100vh;
-  width: auto;
-}
-
-.fullscreen .background {
-  position: absolute;
-  top: -5%;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  -webit-filter: brightness(0.35) grayscale(20%) blur(1px);
-  filter: brightness(0.35) grayscale(20%) blur(1px);
-}
-
-.box-container {
-  border-radius: 10px;
-  margin-bottom: 2.5em;
-  padding: 1em;
-  position: relative;
-}
-
-.box {
-  width: auto;
-  padding: 40px;
-  margin: 50px auto;
-  color: white;
-  font-size: 20px;
-  text-align: justify;
-}
-
-.bbox {
-  width: auto;
-  padding: 40px;
-  margin: 20px auto;
-  color: white;
-  font-size: 20px;
-  text-align: justify;
-}
-
-.info {
-  padding-left: 2.5em;
-}
-
-.info a {
-    color: aquamarine;
     text-decoration: none;
 }
 
+.center-object {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+.center-object .me {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+    padding: 1rem 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.center-object .me .image-title {
+    border-radius: 100%;
+    width: 9em;
+}
+
+.center-object .me .title {
+    filter: drop-shadow(6px 6px 0 rgba(0, 0, 0, 0.4));
+    font-size: 5rem;
+    letter-spacing: 1px;
+    margin: 0.25em;
+}
+
+.buttons {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: flex;
+    height: auto;
+    justify-content: center;
+    padding: 1rem 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.buttons a {
+    border: 0;
+    border-radius: 6px;
+    color: #fff;
+    display: inline-block;
+    font-size: 1.1em;
+    height: 36px;
+    line-height: 36px;
+    margin: 0.25em;
+    padding: 0 2rem;
+    vertical-align: middle;
+}
+
+.fullscreen {
+    background: transparent;
+    display: block;
+    height: 100vh;
+    width: auto;
+}
+
+.fullscreen .background {
+    background-image: url("../img/bg.gif");
+    position: absolute;
+    top: -5%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    filter: brightness(0.35) blur(1px) saturate(150%);
+}
+
+.box {
+    width: auto;
+    padding: 40px;
+    margin: 50px auto;
+    color: white;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.bbox {
+    width: auto;
+    padding: 40px;
+    margin: 20px auto;
+    color: white;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.info {
+    padding-left: 2.5em;
+}
+
 @media (max-width: 550px) {
-  .info {
-    padding-left: 0;
-  }
+    .info {
+        padding-left: 0;
+    }
+}
+
+@media (min-width: 1920px) {
+    .fullscreen .background {
+        background-size: cover;
+    }
+}
+
+/* Scroll Bar */
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #191919;
+    border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    background: grey;
+    border-radius: 10px;
+}
+
+/* Button Colors */
+
+.discord {
+    background-color: #7289d9; 
+}
+
+.twitter {
+    background-color: #1da1f2; 
+}
+
+.youtube {
+    background-color: #ff0000; 
+}
+
+.osu {
+    background-color: #E5629C;
+}
+
+.twitch {
+    background-color: #9147ff;
+}
+
+/* Text Colors */
+
+.aqua {
+    color: #7fffd4;
+}
+
+.purple {
+    color: #957DAD;
+}
+
+.kobi {
+    color: #E79AC6;
+}
+
+.violet {
+    color: #594097;
+}
+
+.blurple {
+    color: #7289d9;
 }

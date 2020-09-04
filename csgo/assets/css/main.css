@@ -1,0 +1,146 @@
+html {
+    font-size: 60%;
+}
+
+a, html, body, h1, h2, h4, p {
+    color: #fff;
+    font-weight: normal;
+    margin: 0;
+}
+
+body {
+    margin: 8px;
+    font-size: 1.5em;
+    line-height: 1.6;
+    font-weight: 400;
+    font-family: "Roboto";
+    color: #222;
+    background-color: #242930;
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.b-container {
+    align-content: center;
+    height: 100%;
+    display: grid;
+    grid-template-columns: .25fr .5fr;
+    justify-content: center;
+}
+
+.box {
+    padding: 20px 20px;
+    margin: auto 50px auto;
+    border-radius: 20px;
+    color: white;
+    background-color: #1c2025;
+    font-size: 20px;
+    text-align: center;
+}
+
+.second-box {
+    padding: 20px;
+    margin: 10px 50px 10px;
+    border-radius: 20px;
+    color: white;
+    background-color: #1c2025;
+    font-size: 20px;
+    text-align: center;
+}
+
+.box h2, .second-box h2 {
+    font-size: 3rem;
+    letter-spacing: -0.1rem;
+    line-height: 1.3;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.t-container {
+    height: auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.textbox {
+    text-align: left;
+}
+
+.buttons {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: flex;
+    height: auto;
+    justify-content: center;
+    padding: 10% 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.buttons a{
+    border: 0;
+    border-radius: 10px;
+    color: #fff;
+    display: inline-block;
+    height: 36px;
+    line-height: 36px;
+    margin: 0.25em;
+    padding: 0 2rem;
+    vertical-align: middle;
+}
+
+.codebox {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: flex;
+    height: auto;
+    width: 100%;
+    z-index: 10;
+}
+
+.codebox p{
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 2px 5px;
+    color: #fff;
+    font-size: .7em;
+}
+
+@media (min-width: 1300px) {
+    .buttons a{
+        font-size: 1em;
+    }
+    .b-container {
+        grid-template-columns: 25% 50%;
+    }
+}
+
+@media (min-width: 1500px) {
+    .b-container {
+        align-content: center;
+        height: 100%;
+        display: grid;
+        grid-template-columns: .25fr .5fr;
+    }
+}
+
+/* Button Colors*/
+
+.red-box {
+    background-color: #ff4c48;
+}
+
+.grey-box {
+    background-color: #2f3136;
+}
+
+/* Text Colors */
+
+.grey {
+    color: #808080;
+}
