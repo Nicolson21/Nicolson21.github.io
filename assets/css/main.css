@@ -17,6 +17,7 @@ a, html, body, h1, h2, h4, p {
     color: #fff;
     font-weight: normal;
     margin: 0;
+    text-decoration: none;
 }
 
 h1 {
@@ -25,15 +26,36 @@ h1 {
     letter-spacing: -0.1rem;
 }
 
-.box h3 {
-    font-size: 3.3rem;
-    letter-spacing: -0.1rem;
-    line-height: 1.3;
-    font-weight: bold;
+.fullscreen {
+    background: transparent;
+    display: block;
+    height: 100vh;
+    width: auto;
 }
 
-a {
-    text-decoration: none;
+.fullscreen .ad {
+    position: fixed;
+    bottom: 5%; 
+    right: 40px;
+    background-color: #FFF;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 8px;
+    z-index: 11;
+}
+
+.fullscreen .ad a {
+    color: #000;
+}
+
+.fullscreen .background {
+    background-image: url("../img/bg.gif");
+    position: absolute;
+    top: -5%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    filter: brightness(0.35) blur(1px) saturate(150%);
 }
 
 .center-object {
@@ -57,7 +79,7 @@ a {
 
 .center-object .me .image-title {
     border-radius: 100%;
-    width: 9em;
+    width: 10em;
 }
 
 .center-object .me .title {
@@ -92,23 +114,6 @@ a {
     vertical-align: middle;
 }
 
-.fullscreen {
-    background: transparent;
-    display: block;
-    height: 100vh;
-    width: auto;
-}
-
-.fullscreen .background {
-    background-image: url("../img/bg.gif");
-    position: absolute;
-    top: -5%;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    filter: brightness(0.35) blur(1px) saturate(150%);
-}
-
 .box {
     width: auto;
     padding: 40px;
@@ -118,13 +123,11 @@ a {
     text-align: justify;
 }
 
-.bbox {
-    width: auto;
-    padding: 40px;
-    margin: 20px auto;
-    color: white;
-    font-size: 20px;
-    text-align: justify;
+.box h3 {
+    font-size: 3.3rem;
+    letter-spacing: -0.1rem;
+    line-height: 1.3;
+    font-weight: bold;
 }
 
 .info {
@@ -153,7 +156,7 @@ a {
     background: #191919;
     border-radius: 10px;
 }
- 
+
 ::-webkit-scrollbar-thumb {
     background: grey;
     border-radius: 10px;
